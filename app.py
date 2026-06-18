@@ -5,13 +5,19 @@ import matplotlib.pyplot as plt
 # --- 1. CONFIGURATIE & INITIALISATIE (Altijd bovenaan!) ---
 st.set_page_config(page_title="Complexe Transformaties", layout="wide")
 
-if "originals" not in st.session_state:
-    st.session_state.originals = []
-if "labels" not in st.session_state:
-    st.session_state.labels = []
+
 
 st.title("📐 Complexe Transformatie: $w = 1/z$")
-st.caption("Zie hoe het complexe vlak binnenstebuiten wordt gekeerd! Voeg vormen toe in de sidebar.")
+st.caption("Zie hoe het complexe vlaif "originals" not in st.session_state:
+    st.session_state.originals = [
+        np.linspace(1 + 1j*(-10), 1 + 1j*10, 500),
+        np.exp(1j * np.linspace(0, 2 * np.pi, 300))
+    ]
+
+if "labels" not in st.session_state:
+    st.session_state.labels = [
+        "Verticale lijn $x=1$",
+        "Eenheidscirkel $|z|=1$"k binnenstebuiten wordt gekeerd! Voeg vormen toe in de sidebar.")
 
 # --- 2. HULPFUNCTIE VOOR PLOTTEN ---
 def plot_complex(ax, curves, title, is_inv=False):
