@@ -8,7 +8,7 @@ st.set_page_config(page_title="Complexe Transformaties", layout="wide")
 
 
 st.title("📐 Complexe Transformatie: $w = 1/z$")
-st.caption("Zie hoe het complexe vlak binnenstebuiten wordt gekeerd! Voeg vormen toe in de sidebar.")
+st.caption("Zie hoe het complexe vlak binnenstebuiten wordt gekeerd! Voeg vormen toe in de sidebar. Ontwerp en bouw door Edwin van der Plas (Deeltijdstudent 2e graadswiskunde docent aan de HAN.")
 
 if "originals" not in st.session_state:
     st.session_state.originals = [
